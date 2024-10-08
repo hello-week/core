@@ -1,0 +1,47 @@
+name: 🔎 Validate
+
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: 🔎 Validate Changes
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🥡 Setup PNPM 8
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+
+      - name: 🧩 Install Dependencies
+        id: install-dependencies
+        run: pnpm install
+
+      - name: ⚛️ Code Lint
+        continue-on-error: true
+        run: pnpm run lint
+
+      - name: 💈 Style Lint
+        continue-on-error: true
+        run: pnpm run lint:style
+
+      - name: 🧪 Run Tests
+        run: pnpm run test
+
+      - name: 🏗️ Build
+        run: pnpm run build

@@ -1,0 +1,21 @@
+# macOS filesystem
+.DS_Store
+Thumbs.db
+
+# Editors and IDEs
+*.sublime-*
+*.code-workspace
+.vscode/
+.idea/
+
+# Generated folders
+.turbo
+node_modules/
+storybook-static
+dist/
+
+# Generated files
+npm-debug
+yarn.lock
+yarn-error.log
+.vercel

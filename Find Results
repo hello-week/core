@@ -1,0 +1,201 @@
+Searching 37 files for "storybook"
+
+~/Documents/Github/next/pnpm-lock.yaml:
+   52:       '@storybook/addon-docs':
+   54:         version: 8.3.5(storybook@8.3.5)
+   55:       '@storybook/addon-essentials':
+   57:         version: 8.3.5(storybook@8.3.5)
+   58:       '@storybook/addon-interactions':
+   60:         version: 8.3.5(storybook@8.3.5)
+   61:       '@storybook/addon-links':
+   63:         version: 8.3.5(react@18.3.1)(storybook@8.3.5)
+   64:       '@storybook/addon-onboarding':
+   66:         version: 8.3.5(react@18.3.1)(storybook@8.3.5)
+   67:       '@storybook/blocks':
+   69:         version: 8.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)
+   70:       '@storybook/builder-vite':
+   72:         version: 8.3.5(storybook@8.3.5)(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.5))
+   73:       '@storybook/react':
+   75:         version: 8.3.5(@storybook/test@8.3.5(storybook@8.3.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)(typescript@5.6.2)
+   76:       '@storybook/react-vite':
+   78:         version: 8.3.5(@storybook/test@8.3.5(storybook@8.3.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.24.0)(storybook@8.3.5)(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.5))
+   79:       '@storybook/testing-library':
+  136:       eslint-plugin-storybook:
+  160:       storybook:
+ 1588:   '@storybook/addon-actions@8.3.5':
+ 1591:       storybook: ^8.3.5
+ 1593:   '@storybook/addon-backgrounds@8.3.5':
+ 1596:       storybook: ^8.3.5
+ 1598:   '@storybook/addon-controls@8.3.5':
+ 1601:       storybook: ^8.3.5
+ 1603:   '@storybook/addon-docs@8.3.5':
+ 1606:       storybook: ^8.3.5
+ 1608:   '@storybook/addon-essentials@8.3.5':
+ 1611:       storybook: ^8.3.5
+ 1613:   '@storybook/addon-highlight@8.3.5':
+ 1616:       storybook: ^8.3.5
+ 1618:   '@storybook/addon-interactions@8.3.5':
+ 1621:       storybook: ^8.3.5
+ 1623:   '@storybook/addon-links@8.3.5':
+ 1627:       storybook: ^8.3.5
+ 1632:   '@storybook/addon-measure@8.3.5':
+ 1635:       storybook: ^8.3.5
+ 1637:   '@storybook/addon-onboarding@8.3.5':
+ 1640:       storybook: ^8.3.5
+ 1642:   '@storybook/addon-outline@8.3.5':
+ 1645:       storybook: ^8.3.5
+ 1647:   '@storybook/addon-toolbars@8.3.5':
+ 1650:       storybook: ^8.3.5
+ 1652:   '@storybook/addon-viewport@8.3.5':
+ 1655:       storybook: ^8.3.5
+ 1657:   '@storybook/blocks@8.3.5':
+ 1662:       storybook: ^8.3.5
+ 1669:   '@storybook/builder-vite@8.3.5':
+ 1673:       storybook: ^8.3.5
+ 1685:   '@storybook/components@8.3.5':
+ 1688:       storybook: ^8.3.5
+ 1690:   '@storybook/core@8.3.5':
+ 1693:   '@storybook/csf-plugin@8.3.5':
+ 1696:       storybook: ^8.3.5
+ 1698:   '@storybook/csf@0.0.1':
+ 1701:   '@storybook/csf@0.1.11':
+ 1704:   '@storybook/global@5.0.0':
+ 1707:   '@storybook/icons@1.2.12':
+ 1714:   '@storybook/instrumenter@8.3.5':
+ 1717:       storybook: ^8.3.5
+ 1719:   '@storybook/manager-api@8.3.5':
+ 1722:       storybook: ^8.3.5
+ 1724:   '@storybook/preview-api@8.3.5':
+ 1727:       storybook: ^8.3.5
+ 1729:   '@storybook/react-dom-shim@8.3.5':
+ 1734:       storybook: ^8.3.5
+ 1736:   '@storybook/react-vite@8.3.5':
+ 1742:       storybook: ^8.3.5
+ 1745:   '@storybook/react@8.3.5':
+ 1749:       '@storybook/test': 8.3.5
+ 1752:       storybook: ^8.3.5
+ 1755:       '@storybook/test':
+ 1760:   '@storybook/test@8.3.5':
+ 1763:       storybook: ^8.3.5
+ 1765:   '@storybook/testing-library@0.2.2':
+ 1767:     deprecated: In Storybook 8, this package functionality has been integrated to a new package called @storybook/test, which uses Vitest APIs for an improved experience. When upgrading to Storybook 8 with 'npx storybook@latest upgrade', you will get prompted and will get an automigration for the new package. Please migrate when you can.
+ 1769:   '@storybook/theming@8.3.5':
+ 1772:       storybook: ^8.3.5
+ 3106:   eslint-plugin-storybook@0.8.0:
+ 4733:   storybook@8.3.5:
+ 6646:       eslint-plugin-storybook: 0.8.0(eslint@8.57.1)(typescript@5.6.2)
+ 7034:   '@storybook/addon-actions@8.3.5(storybook@8.3.5)':
+ 7036:       '@storybook/global': 5.0.0
+ 7040:       storybook: 8.3.5
+ 7043:   '@storybook/addon-backgrounds@8.3.5(storybook@8.3.5)':
+ 7045:       '@storybook/global': 5.0.0
+ 7047:       storybook: 8.3.5
+ 7050:   '@storybook/addon-controls@8.3.5(storybook@8.3.5)':
+ 7052:       '@storybook/global': 5.0.0
+ 7055:       storybook: 8.3.5
+ 7058:   '@storybook/addon-docs@8.3.5(storybook@8.3.5)':
+ 7061:       '@storybook/blocks': 8.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)
+ 7062:       '@storybook/csf-plugin': 8.3.5(storybook@8.3.5)
+ 7063:       '@storybook/global': 5.0.0
+ 7064:       '@storybook/react-dom-shim': 8.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)
+ 7071:       storybook: 8.3.5
+ 7076:   '@storybook/addon-essentials@8.3.5(storybook@8.3.5)':
+ 7078:       '@storybook/addon-actions': 8.3.5(storybook@8.3.5)
+ 7079:       '@storybook/addon-backgrounds': 8.3.5(storybook@8.3.5)
+ 7080:       '@storybook/addon-controls': 8.3.5(storybook@8.3.5)
+ 7081:       '@storybook/addon-docs': 8.3.5(storybook@8.3.5)
+ 7082:       '@storybook/addon-highlight': 8.3.5(storybook@8.3.5)
+ 7083:       '@storybook/addon-measure': 8.3.5(storybook@8.3.5)
+ 7084:       '@storybook/addon-outline': 8.3.5(storybook@8.3.5)
+ 7085:       '@storybook/addon-toolbars': 8.3.5(storybook@8.3.5)
+ 7086:       '@storybook/addon-viewport': 8.3.5(storybook@8.3.5)
+ 7087:       storybook: 8.3.5
+ 7092:   '@storybook/addon-highlight@8.3.5(storybook@8.3.5)':
+ 7094:       '@storybook/global': 5.0.0
+ 7095:       storybook: 8.3.5
+ 7097:   '@storybook/addon-interactions@8.3.5(storybook@8.3.5)':
+ 7099:       '@storybook/global': 5.0.0
+ 7100:       '@storybook/instrumenter': 8.3.5(storybook@8.3.5)
+ 7101:       '@storybook/test': 8.3.5(storybook@8.3.5)
+ 7103:       storybook: 8.3.5
+ 7106:   '@storybook/addon-links@8.3.5(react@18.3.1)(storybook@8.3.5)':
+ 7108:       '@storybook/csf': 0.1.11
+ 7109:       '@storybook/global': 5.0.0
+ 7110:       storybook: 8.3.5
+ 7115:   '@storybook/addon-measure@8.3.5(storybook@8.3.5)':
+ 7117:       '@storybook/global': 5.0.0
+ 7118:       storybook: 8.3.5
+ 7121:   '@storybook/addon-onboarding@8.3.5(react@18.3.1)(storybook@8.3.5)':
+ 7124:       storybook: 8.3.5
+ 7128:   '@storybook/addon-outline@8.3.5(storybook@8.3.5)':
+ 7130:       '@storybook/global': 5.0.0
+ 7131:       storybook: 8.3.5
+ 7134:   '@storybook/addon-toolbars@8.3.5(storybook@8.3.5)':
+ 7136:       storybook: 8.3.5
+ 7138:   '@storybook/addon-viewport@8.3.5(storybook@8.3.5)':
+ 7141:       storybook: 8.3.5
+ 7143:   '@storybook/blocks@8.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)':
+ 7145:       '@storybook/csf': 0.1.11
+ 7146:       '@storybook/global': 5.0.0
+ 7147:       '@storybook/icons': 1.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+ 7156:       storybook: 8.3.5
+ 7164:   '@storybook/builder-vite@8.3.5(storybook@8.3.5)(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.5))':
+ 7166:       '@storybook/csf-plugin': 8.3.5(storybook@8.3.5)
+ 7174:       storybook: 8.3.5
+ 7183:   '@storybook/components@8.3.5(storybook@8.3.5)':
+ 7185:       storybook: 8.3.5
+ 7187:   '@storybook/core@8.3.5':
+ 7189:       '@storybook/csf': 0.1.11
+ 7207:   '@storybook/csf-plugin@8.3.5(storybook@8.3.5)':
+ 7209:       storybook: 8.3.5
+ 7214:   '@storybook/csf@0.0.1':
+ 7218:   '@storybook/csf@0.1.11':
+ 7222:   '@storybook/global@5.0.0': {}
+ 7224:   '@storybook/icons@1.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+ 7229:   '@storybook/instrumenter@8.3.5(storybook@8.3.5)':
+ 7231:       '@storybook/global': 5.0.0
+ 7233:       storybook: 8.3.5
+ 7236:   '@storybook/manager-api@8.3.5(storybook@8.3.5)':
+ 7238:       storybook: 8.3.5
+ 7240:   '@storybook/preview-api@8.3.5(storybook@8.3.5)':
+ 7242:       storybook: 8.3.5
+ 7244:   '@storybook/react-dom-shim@8.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)':
+ 7248:       storybook: 8.3.5
+ 7250:   '@storybook/react-vite@8.3.5(@storybook/test@8.3.5(storybook@8.3.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.24.0)(storybook@8.3.5)(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.5))':
+ 7254:       '@storybook/builder-vite': 8.3.5(storybook@8.3.5)(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.5))
+ 7255:       '@storybook/react': 8.3.5(@storybook/test@8.3.5(storybook@8.3.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)(typescript@5.6.2)
+ 7262:       storybook: 8.3.5
+ 7267:       - '@storybook/test'
+ 7274:   '@storybook/react@8.3.5(@storybook/test@8.3.5(storybook@8.3.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)(typescript@5.6.2)':
+ 7276:       '@storybook/components': 8.3.5(storybook@8.3.5)
+ 7277:       '@storybook/global': 5.0.0
+ 7278:       '@storybook/manager-api': 8.3.5(storybook@8.3.5)
+ 7279:       '@storybook/preview-api': 8.3.5(storybook@8.3.5)
+ 7280:       '@storybook/react-dom-shim': 8.3.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.5)
+ 7281:       '@storybook/theming': 8.3.5(storybook@8.3.5)
+ 7295:       storybook: 8.3.5
+ 7300:       '@storybook/test': 8.3.5(storybook@8.3.5)
+ 7303:   '@storybook/test@8.3.5(storybook@8.3.5)':
+ 7305:       '@storybook/csf': 0.1.11
+ 7306:       '@storybook/global': 5.0.0
+ 7307:       '@storybook/instrumenter': 8.3.5(storybook@8.3.5)
+ 7313:       storybook: 8.3.5
+ 7316:   '@storybook/testing-library@0.2.2':
+ 7322:   '@storybook/theming@8.3.5(storybook@8.3.5)':
+ 7324:       storybook: 8.3.5
+ 9183:   eslint-plugin-storybook@0.8.0(eslint@8.57.1)(typescript@5.6.2):
+ 9185:       '@storybook/csf': 0.0.1
+ 11081:   storybook@8.3.5:
+ 11083:       '@storybook/core': 8.3.5
+
+~/Documents/Github/next/turbo.json:
+    5:       "outputs": ["dist/**", "storybook-static/**"],
+
+~/Documents/Github/next/.gitignore:
+   14: storybook-static
+
+~/Documents/Github/next/package.json:
+   42:     "storybook": "^8.3.2",
+   57:     "eslint-plugin-storybook": "^0.8.0",
+
+252 matches across 4 files

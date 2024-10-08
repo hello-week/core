@@ -1,0 +1,28 @@
+{
+  "name": "@hello-week/core",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc --watch -p tsconfig.json",
+    "lint": "eslint .",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@hello-week/utilities": "workspace:*"
+  },
+  "devDependencies": {
+    "@harmonix-hub/tsconfig": "^1.3.2",
+    "@harmonix-hub/testing": "^1.3.4",
+    "@harmonix-hub/babel": "^0.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
