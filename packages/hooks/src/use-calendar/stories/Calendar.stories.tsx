@@ -4,7 +4,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Theme, Text, Button, List } from "@stewed/react";
 // Hooks
 import { useCalendar } from "../index";
-import { Stats } from "fs";
 
 type Story = StoryObj<typeof useCalendar>;
 
