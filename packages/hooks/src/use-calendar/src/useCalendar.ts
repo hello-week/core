@@ -1,9 +1,11 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 // Calendar
-import { Calendar, type CalendarOptions, type DayOptions, type HighlightedDates } from "@hello-week/core";
-
-/** Props for configuring the `useCalendar` hook, extending the base `CalendarOptions`. */
-export interface UseCalendarProps<T> extends CalendarOptions<T> {}
+import {
+  Calendar,
+  type DayOptions,
+  type HighlightedDates,
+  type CalendarOptions,
+} from "@hello-week/core";
 
 interface UseCalendarData<T> {
   /** The current month being displayed. */
@@ -28,28 +30,39 @@ export interface UseCalendar<T> {
   prevMonth: () => void;
   /**  Navigates to the next month. */
   nextMonth: () => void;
+  /** Navigates to the previous year. */
+  prevYear: () => void;
+  /**  Navigates to the next year. */
+  nextYear: () => void;
   /**
    * Sets the calendar options.
    * @param options - The options to configure the calendar.
    */
-  set: (options: UseCalendarProps<T>) => void;
+  set: (options: CalendarOptions<T>) => void;
 }
 
-export function useCalendar<T>({
-  defaultDate,
-  disabledDates,
-  disabledDaysOfWeek,
-  disabledPastDates,
-  formatDate,
-  highlightedDates,
-  highlightedToday,
-  lang,
-  maxDate,
-  minDate,
-  selectedDates,
-  weekStart,
-  locked,
-}: UseCalendarProps<T>): UseCalendar<T> {
+/**
+ * Hook that provides calendar functionality with various configurable options.
+ *
+ * @template T - The type of the highlighted dates object used in the calendar.
+ *
+ * @param {Object} props - The properties to configure the calendar.
+ * @returns {UseCalendar<T>} - An object containing the state and functions to interact with the calendar.
+ *
+ * @example
+ * ```ts
+ * const { prevMonth, nextMonth, data, set } = useCalendar({
+ *   defaultDate: new Date(),
+ *   disabledDates: [new Date(2024, 0, 1), new Date(2024, 11, 25)], // Disable New Year's and Christmas
+ *   weekStart: 1, // Week starts on Monday
+ *   locked: false, // Calendar is interactive
+ * });
+ *
+ * // Set option
+ * set({ minDate: new Date() });
+ * ```
+ */
+export function useCalendar<T>(options?: CalendarOptions<T>): UseCalendar<T> {
   // A ref to store the `Calendar` instance, which provides the calendar logic and methods.
   const calendarRef = useRef<Calendar<T>>();
 
@@ -79,46 +92,17 @@ export function useCalendar<T>({
   }, []);
 
   useEffect(() => {
-    calendarRef.current = new Calendar<T>({
-      defaultDate,
-      disabledDates,
-      disabledDaysOfWeek,
-      disabledPastDates,
-      formatDate,
-      highlightedDates,
-      highlightedToday,
-      lang,
-      maxDate,
-      minDate,
-      selectedDates,
-      weekStart,
-      locked,
-    });
+    calendarRef.current = new Calendar<T>(options);
 
     updateData();
 
     () => setData(undefined);
-  }, [
-    defaultDate,
-    disabledDates,
-    disabledDaysOfWeek,
-    disabledPastDates,
-    formatDate,
-    highlightedDates,
-    highlightedToday,
-    lang,
-    locked,
-    maxDate,
-    minDate,
-    selectedDates,
-    updateData,
-    weekStart,
-  ]);
+  }, [options, updateData]);
 
   // Define a callback function to set options on the calendar instance.
   // The function accepts an object of options and merges it with the previous options.
   const set = useCallback(
-    (ops: UseCalendarProps<T>) => {
+    (ops: CalendarOptions<T>) => {
       // Update the calendar options using the setOptions method on the calendar reference.
       calendarRef.current?.setOptions((prev) => ({
         ...prev,
@@ -147,10 +131,28 @@ export function useCalendar<T>({
     updateData();
   }, [updateData]);
 
+  // Define a callback function to navigate to the previous year.
+  const prevYear = useCallback(() => {
+    // Call the prevYear method on the calendar reference to navigate back a year.
+    calendarRef.current?.prevYear();
+    // Call updateData to refresh the calendar data after changing the year.
+    updateData();
+  }, [updateData]);
+
+  // Define a callback function to navigate to the next year.
+  const nextYear = useCallback(() => {
+    // Call the nextYear method on the calendar reference to navigate forward a year.
+    calendarRef.current?.nextYear();
+    // Call updateData to refresh the calendar data after changing the year.
+    updateData();
+  }, [updateData]);
+
   return {
     data,
     prevMonth,
     nextMonth,
+    prevYear,
+    nextYear,
     set,
   };
 }
