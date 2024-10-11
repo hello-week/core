@@ -1,5 +1,11 @@
 # @hello-week/hooks
 
+## 0.3.0
+
+### Minor Changes
+
+- ed56611: return prev and next year functions for calendar hook
+
 ## 0.2.0
 
 ### Minor Changes
