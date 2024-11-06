@@ -12,7 +12,7 @@
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch -p tsconfig.json",
     "lint": "eslint .",
-    "test": "jest",
+    "test": "jest --testPathPattern=\".test.*\" --coverage",
     "clean": "rm -rf dist node_modules"
   },
   "devDependencies": {

@@ -12,7 +12,7 @@
     "build": "vite build",
     "watch": "vite build --watch",
     "lint": "eslint .",
-    "test": "jest",
+    "test": "jest --testPathPattern=\".test.*\" --coverage",
     "clean": "rm -rf dist node_modules"
   },
   "dependencies": {
