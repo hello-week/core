@@ -8,6 +8,7 @@
   "files": [
     "dist/**"
   ],
+  "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch -p tsconfig.json",
