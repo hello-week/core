@@ -11,10 +11,12 @@
     "clean": "turbo clean && rm -rf node_modules",
     "storybook": "storybook dev -p 9000",
     "build-storybook": "storybook build",
-    "changelog": "changeset-conventional",
-    "status:packages": "changeset status --verbose",
-    "publish:packages": "changeset publish",
-    "version:packages": "changeset version"
+    "changelog:conventional": "changeset-conventional",
+    "changelog:package": "changeset",
+    "changelog:generate": "npm run changelog:conventional & npm run packages:version",
+    "packages:status": "changeset status --verbose",
+    "packages:publish": "changeset publish",
+    "packages:version": "changeset version"
   },
   "dependencies": {
     "@hello-week/core": "workspace:*",
