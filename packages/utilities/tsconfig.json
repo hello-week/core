@@ -4,6 +4,6 @@
     "module": "ES2020",
     "outDir": "./dist",
   },
-  "include": ["index.ts", "./src/**/*", "./src/index.ts*"],
+  "include": ["index.ts", "./src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
