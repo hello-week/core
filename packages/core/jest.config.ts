@@ -2,5 +2,5 @@ import { jestConfig } from "@harmonix-hub/testing";
 
 module.exports = {
   ...jestConfig(),
-  testEnvironment: "jsdom",
+  moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx"],
 };

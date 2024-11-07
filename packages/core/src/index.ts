@@ -221,6 +221,9 @@ export class Calendar<T> {
       this.options = { ...this.options, ...options };
     }
 
+    // Update array of highlighted dates.
+    this.highlightedDates = this.options?.highlightedDates || [];
+
     // Create array with days of month.
     this.createMonth();
   }
