@@ -40,9 +40,6 @@ importers:
       '@harmonix-hub/tsconfig':
         specifier: ^1.4.2
         version: 1.4.2
-      '@stewed/react':
-        specifier: ^1.0.0
-        version: 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/addon-docs':
         specifier: ^8.4.2
         version: 8.4.2(@types/react@18.3.12)(storybook@8.4.2(prettier@3.3.3))
@@ -1444,17 +1441,6 @@ packages:
   '@harmonix-hub/tsconfig@1.4.2':
     resolution: {integrity: sha512-9Z6TmxeJNpudBbFMyCvRyqW/aunFzC+OPZu1foumRz+SWjYsls9Lyo3CxDzHtTAMrx6vxx46YMpQxhfXXeSTJw==}
 
-  '@hello-week/core@0.2.0':
-    resolution: {integrity: sha512-G2LeONCtbJQqkm6jmBtUH8su9MFqb2UvEfRpnMEp5UBmaEhj5d+6PQDdzANOxrZbTYMckh1Xh0jUVb4Hw/FreA==}
-
-  '@hello-week/hooks@0.3.0':
-    resolution: {integrity: sha512-SCvYHxAUmryJvEqYjtK1q5z4sx2fP1gNSp/W8LiQZuCqiVCv8/8120M4eGFfHKKp+kP6lKurJOBsLy0BnQTxbA==}
-    peerDependencies:
-      react: ^18.3.1
-
-  '@hello-week/utilities@0.2.0':
-    resolution: {integrity: sha512-5UaXdMo06wpBs+ZYLYj2CUVf5dE3DFqpt7r0YwlJME+j5XD3WEEDU6i2rfLBFDeg9HEumZctsigH77RGJKY4Gw==}
-
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
     engines: {node: '>=10.10.0'}
@@ -1753,23 +1739,6 @@ packages:
 
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
-
-  '@stewed/hooks@1.0.0':
-    resolution: {integrity: sha512-obKIgby4wGIR6ADOekPxTqCo12U14T6a6UBmog16r6pyGVz/9M1gGgpVLhlgd8PGDCQKy42ygrmfyzBrSHYOOA==}
-    peerDependencies:
-      react: ^18.3.1
-
-  '@stewed/react@1.0.0':
-    resolution: {integrity: sha512-PP62oj9lzGhUfadJSSpQi4pZJWoGK/Ke1hMOn3YG9M8rE4R21WQFS36tg0mJjYIk6V/Jhcckt0uSNS92zRQcCA==}
-    peerDependencies:
-      react: ^18.3.1
-      react-dom: ^18.3.1
-
-  '@stewed/tokens@1.0.0':
-    resolution: {integrity: sha512-LzEK6fR5ALG3++0/ZAIvGrI33vVBgj0fljv4zruWzT93tBjiMLmMCAU48w1M+RU6IS0tMJcmxZv7KjTCDK4FFA==}
-
-  '@stewed/utilities@1.0.0':
-    resolution: {integrity: sha512-Nol1iQSM4PHEgaN0JS1/oelT8NAI+cjzEiKokmBqbzRA0sWRML+TJ/0ZDgPRTXin73N9fWb/NlZUn89j9rfBYQ==}
 
   '@storybook/addon-actions@8.4.2':
     resolution: {integrity: sha512-+hA200XN5aeA4T3jq8IifQq6Y+9FyNQ0Q+blM1L0Tl7WLzBc7B1kHQnKvhSj5pvMSBWc/Q/kY7Ev5t9gdOu13g==}
@@ -6606,18 +6575,6 @@ snapshots:
     dependencies:
       typescript: 5.6.2
 
-  '@hello-week/core@0.2.0':
-    dependencies:
-      '@hello-week/utilities': 0.2.0
-
-  '@hello-week/hooks@0.3.0(react@18.3.1)':
-    dependencies:
-      '@hello-week/core': 0.2.0
-      '@hello-week/utilities': 0.2.0
-      react: 18.3.1
-
-  '@hello-week/utilities@0.2.0': {}
-
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
@@ -7024,26 +6981,6 @@ snapshots:
   '@sinonjs/fake-timers@10.3.0':
     dependencies:
       '@sinonjs/commons': 3.0.1
-
-  '@stewed/hooks@1.0.0(react@18.3.1)':
-    dependencies:
-      '@stewed/tokens': 1.0.0
-      '@stewed/utilities': 1.0.0
-      react: 18.3.1
-
-  '@stewed/react@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@hello-week/hooks': 0.3.0(react@18.3.1)
-      '@hello-week/utilities': 0.2.0
-      '@stewed/hooks': 1.0.0(react@18.3.1)
-      '@stewed/tokens': 1.0.0
-      '@stewed/utilities': 1.0.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
-  '@stewed/tokens@1.0.0': {}
-
-  '@stewed/utilities@1.0.0': {}
 
   '@storybook/addon-actions@8.4.2(storybook@8.4.2(prettier@3.3.3))':
     dependencies:
