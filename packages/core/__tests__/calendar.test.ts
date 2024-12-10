@@ -57,15 +57,7 @@ describe("Calendar", () => {
 
   it("should get week days in specified language and format", () => {
     calendar.setOptions({ lang: "es-ES" });
-    expect(calendar.getWeekDays()).toEqual([
-      "dom",
-      "lun",
-      "mar",
-      "mié",
-      "jue",
-      "vie",
-      "sáb",
-    ]);
+    expect(calendar.getWeekDays()).toEqual(["dom", "lun", "mar", "mié", "jue", "vie", "sáb"]);
   });
 
   it("should correctly set and retrieve highlighted dates", () => {

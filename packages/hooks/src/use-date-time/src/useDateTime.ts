@@ -90,7 +90,7 @@ export interface FormatDateTime extends FormatDateTimeReturnBoolean {
    * @param unit - The unit of time to calculate the difference in, can be "days", "months", or "years".
    * @returns The difference in the specified unit of time.
    */
-  diff(value: Date | string, unit: "days" | "months" | "years"): number;
+  diff(value: Date | string, unit: "days" | "months" | "years" | "hours" | "minutes"): number;
   /**
    * Negates the results of boolean comparison methods.
    *
@@ -201,11 +201,15 @@ export function useDateTime(options?: UseDateTimeProps): UseDateTime {
             .toString()
             .padStart(2, "0")}-${currentDate.getDate().toString().padStart(2, "0")}`,
         currentDate: () => currentDate,
-        diff: function (dateToCompare, unit) {
+        diff: function (dateToCompare, unit): number {
           // Convert the value to a Date object if it's a string
           const toCompare =
             typeof dateToCompare === "string" ? new Date(dateToCompare) : dateToCompare;
-          // Calculate the difference in years, months, and days
+
+          // Calculate the difference in milliseconds
+          const diffMilliseconds = toCompare.getTime() - currentDate.getTime();
+
+          // Calculate the difference in years, months, days, hours, and minutes
           const diffUnits = {
             years:
               currentDate.getMonth() > toCompare.getMonth() ||
@@ -218,16 +222,25 @@ export function useDateTime(options?: UseDateTimeProps): UseDateTime {
               12 * toCompare.getFullYear() -
               (currentDate.getMonth() + 12 * currentDate.getFullYear()) -
               (toCompare.getDate() >= currentDate.getDate() ? 0 : 1),
-            days: Math.round((toCompare.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24)),
+            days: Math.round(diffMilliseconds / (1000 * 60 * 60 * 24)),
+            hours: Math.round(diffMilliseconds / (1000 * 60 * 60)),
+            minutes: Math.round(diffMilliseconds / (1000 * 60)),
           };
-          // Use the new instance for manipulation
+
+          // Return the difference in the specified unit
           switch (unit) {
+            case "years":
+              return diffUnits.years;
             case "months":
               return diffUnits.months;
             case "days":
               return diffUnits.days;
-            case "years":
-              return diffUnits.years;
+            case "hours":
+              return diffUnits.hours;
+            case "minutes":
+              return diffUnits.minutes;
+            default:
+              throw new Error(`Unsupported unit: ${unit}`);
           }
         },
         isSameDay: (otherDate) => isSameDate(currentDate, otherDate),

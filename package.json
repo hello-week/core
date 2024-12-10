@@ -66,8 +66,7 @@
     "@storybook/react": "^8.4.2",
     "@storybook/react-vite": "^8.4.2",
     "@storybook/testing-library": "^0.2.2",
-    "storybook": "^8.4.2",
-    "@stewed/react": "^1.0.0"
+    "storybook": "^8.4.2"
   },
   "optionalDependencies": {
     "@nx/nx-linux-x64-gnu": "^19.8.0"
