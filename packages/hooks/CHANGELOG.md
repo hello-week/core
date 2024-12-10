@@ -1,5 +1,11 @@
 # @hello-week/hooks
 
+## 0.4.0
+
+### Minor Changes
+
+- add support for hour and minutes
+
 ## 0.3.0
 
 ### Minor Changes
